@@ -74,9 +74,4 @@ img{
   border-radius: 80px 80px 80px 80px
 }
 
-@media all and (orientation:landscape) {
-width: 90%;
-}
-@media all and (orientation:portrait) {
-width: 40%;
-}
+

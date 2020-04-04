@@ -2,14 +2,14 @@ body {
   color: #555;
   margin: 0;
 }
-
+{
 input,
 textarea,
 button,
 select,
 a {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
-}
+  }}
 #header {
   background-color: #FFE4E1;
   height: 150px;

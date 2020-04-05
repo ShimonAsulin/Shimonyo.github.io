@@ -3,15 +3,14 @@ body {
   margin: 0;
 }
 #header {
-  background-color: #FFE4E1;
+  background-color: #FAACA8;
+  background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
   height: 150px;
   line-height: 150px;
 }
 #header a{
   color: white;
   text-decoration: none;
-
-
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
@@ -19,13 +18,15 @@ body {
   color: #222;
 }
 #header-title img{
-  width: 80px;
+  color: none;
+  background-image: none;
+  width: 100px;
   border-radius: 50%;
   margin: -35px;
   margin-right: 30px;
-
-
-
+  border-style: solid;
+  text-decoration: none;
+  -webkit-tap-highlight-color:
 }
 
 #header-title{
@@ -41,6 +42,8 @@ body {
   display: block;
   float: left;
   margin-top: 0;
+  font-size: 20px;
+  font-weight: 600;
 
 }
 #header-nav li{
@@ -49,24 +52,28 @@ body {
 }
 
 a {
-  color: #1abc9c;
+
   text-decoration: none;
--webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
 
 }
 a:hover {
   color: #222;
 }
 #footer img{
-  margin: -4px;
+  margin: 4px;
   margin-right: 40px;
+  border-radius: 40px;
+
 }
 
-.about-content {
-  text-align: center;
+#content {
+ margin-right: 30px
 }
 .about-title {
   text-align: center;
+  margin-bottom: 70px;
+
 }
 #footer {
   background-color: #A9A9A9;
@@ -92,11 +99,34 @@ a:hover {
   vertical-align: top;
   <>
 }
+.column-left h3 {
+  margin-left: 40px;
+}
 .column-left {
   float: left;
-  margin-left:
+  text-align: center;
+  padding-left: 60px;
+  margin-top: 30px;
+}
+
+form {
+ background-color: #f2f2f2;
+ width: 40%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
 
 }
+form input:text{
+  width: 45%
+
+}
+input[type=text]:focus {
+  border: 2px solid grey;
+}
+
+
 .container{
   max-width: 100%;
 

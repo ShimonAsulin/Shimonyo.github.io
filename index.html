@@ -272,6 +272,19 @@ document.oncontextmenu=new Function("alert(message);return false")
 
 </ol>
 <p class="center">
+  <input type="text" id="subject"><br>
+<textarea id="body"></textarea>
+<button type="button" id="send">Submit</button>
+<script type="text/javascript">
+
+$('#send').on('click', function(e) {
+  e.preventDefault();
+  subject = $('#subject').val();
+  body = $('#body').val();
+  window.location = "mailto:asulin.shimon699@gmail.com?subject=" + subject + "&body=" + body;
+});
+  
+</script>
 צוות התמיכה והחיבוק שלנו לרשותכם.</p>
 <p class="center">אל תהססו לפנות אלינו לכל בקשת תמיכה, סיוע או עזרה בכל דבר.
 </p>

@@ -52,3 +52,10 @@ body {
     transition: .4s ease-in-out;
 
 }
+
+.footer { 
+    position:absolute;
+    right:45%;
+    bottom: 0;
+    
+}

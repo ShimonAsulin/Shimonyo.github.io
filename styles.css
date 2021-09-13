@@ -54,8 +54,6 @@ body {
 }
 
 .footer { 
-    position:absolute;
-    right:45%;
-    bottom: 0;
+    padding-top:150px;
     
 }

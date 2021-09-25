@@ -142,7 +142,7 @@
   }
   
   /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color:rgb(224, 228, 227);
+  .dropdown-content a:hover {background-color:rgba(194, 190, 190, 0.089);
     ;
     }
   
@@ -163,12 +163,11 @@
 }
 .walcomeText {
     margin: auto;
-    color: #fff;
+    color: rgb(0, 0, 0);
     font-size: 65px;
     transition: 0.5s ease-in-out;
     font-family: 'Courier New', Courier, monospace;
-    border: 2px solid rgb(127, 221, 213);
-    box-shadow: 0 0 10px rgb(0, 0, 0);
+    box-shadow: 5px 5px  rgba(0, 0, 0, 2);
 }
 
 

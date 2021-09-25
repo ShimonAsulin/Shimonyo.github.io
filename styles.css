@@ -37,8 +37,12 @@
     color: var(--secondary-color);
 }
 
-.navbar-links a:hover {
+.web-color:hover {
     color:rgb(127, 221, 213);
+}
+
+.green:hover {
+    color:rgb(70, 209, 77);
 }
 
 
@@ -123,7 +127,10 @@
     width:100%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    
+  }
+
+  .dropdown-content.open {
+    background-color: #ff0000;
   }
   
   /* Links inside the dropdown */
@@ -135,7 +142,9 @@
   }
   
   /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd}
+  .dropdown-content a:hover {background-color:rgb(224, 228, 227);
+    ;
+    }
   
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
   .show {display:block;}

@@ -55,3 +55,128 @@
     border: 1.3px solid rgb(127, 221, 213);
     
 }
+
+
+
+.menu-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    margin-right: 10px;
+}
+
+.menu-btn-burger {
+    width: 35px;
+    height: 4px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn-burger::before,
+.menu-btn-burger::after {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height:4px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn-burger::before {
+    transform:translateY(-13px);
+}
+
+.menu-btn-burger::after {
+    transform:translateY(13px);
+}
+
+/* ANIMATION */
+
+.menu-btn.open .menu-btn-burger {
+    transform:translateX(-50px);
+    background: transparent;
+}
+
+.menu-btn.open .menu-btn-burger::before{
+    transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .menu-btn-burger::after{
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    background-color: #f1f1f1;
+    width:100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+
+
+.walcome {
+    display: flex;
+    opacity: 85%;
+    height: 100vh;
+    width: 100%;
+    background-image: url('img\\Walcome-screen.jpg');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+.walcomeText {
+    margin: auto;
+    color: #fff;
+    font-size: 65px;
+    transition: 0.5s ease-in-out;
+    font-family: 'Courier New', Courier, monospace;
+    border: 2px solid rgb(127, 221, 213);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+
+
+/* Mobile browsers */
+
+@media screen and (max-width:620px) {
+    .navbar ul {
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width:621px) {
+
+    .menu-btn {
+        display: none;
+    }
+
+}

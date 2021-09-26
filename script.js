@@ -5,7 +5,6 @@ menuBtn.addEventListener('click', () => {
         menuBtn.classList.add('open');        
         menuOpen = true;
         document.getElementById("myDropdown").classList.toggle("show");
-        document.getElementById(".dropdown-content").classList.toggle("show");
 
     } else {
         menuBtn.classList.remove('open');

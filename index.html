@@ -32,7 +32,14 @@
             const analytics = getAnalytics(app);
 
              
-        
+            function writeData() {
+                firebase.database().ref("User").set ({
+                    name: document.getElementById("nameField").value,
+                    age: document.getElementById("ageField").value
+                });
+
+            }
+
     
 
         </script>
@@ -60,6 +67,13 @@
         <div class='walcome'>
             <h1 class='walcomeText'>Walcome</h1>
         </div>
+        
+        <h1>hey</h1>
+        <input type="text" placeholder="Name" id="nameField">
+        <input type="text" placeholder="Age" id="ageField">
+        <button onclick= "writeData()">submit</button>
+
+        
                 <script src="script.js"></script>
 
     </main> 

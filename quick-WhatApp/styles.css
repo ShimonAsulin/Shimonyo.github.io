@@ -81,7 +81,7 @@ h4{
 
 @media screen and (max-width: 440px){
     .header-container {
-        padding: 10px;
+        padding: 2em 10px;
     }
     
     img {
@@ -90,40 +90,29 @@ h4{
     }
     
     .myDropDown  {
-        padding: 10px;
+        padding: 1em;
         width:25%;
+        background-color:#fff;
     }
     
     
     #input {
         width: 40%;
-        padding:10px;
+        padding:1em;
     }
     
     #send {
-        padding: 8px;
-        background-color:#209724;
-        color: #fff;
-        border: 3px solid #209724;
-        border-radius: 0 30px 30px 0;
+        padding: 1em;
+        border: 1px solid #209724;
     }
     
-    #edit-name {
-        padding-bottom: 1.2em;;
-        font-size: 12px;
-        border:none;
-        background-color:none;
-        width:1px;
-        height: inherit;
-        cursor: pointer;
-    }
+    /* #edit-name {
+    } */
     
     h4{
-        font-family:'Courier New', Courier, monospace;
         margin-bottom:1em;
         position: absolute;
         bottom: 0;
         width: 96%;
-
     }
 }

@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <title>Quick WhatsApp</title>
-</head>
-<body>
-    <main class="container">
-            <a href=/index.html><i class="fas fa-arrow-circle-left"></i></a>
-            <h1 class="title">Send a WhatsApp message</h1>
-            <h2 class="subtitle">Without save the contact!</h2>
-            <input id="userInput" type="number" placeholder="write the phone number" required>
-            <input class="submit" type="submit" value="Send" onclick="othername();" />
-            <footer class="footer">
-            <h2>Shimon-Web</h2>
-            </footer>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <title>QuickWhatsApp</title>
+    </head>
+    <body>
+        <header class="header-container">
+            <h1 id="header">welcome back </h1>
+            <button id="edit-name">✏️</button>
+        </header>
+        <main id="main">
+            <img src="./img/icon.png">
+            <select name="+number" id="dropdown" class="myDropDown">
+                <option value="select area code from the list" selected>select</option>
+                <option value="+972">Israel</option>
+                <option value="+1">US</option>
+                <option value="+33">France</option>
+                </select> <span> -</span>
+            <input id="input" placeholder="050####" type="number" required>
+            <button type="submit" id="send">Send</button>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=asulin.shimon699@gmail.com" target="_blank" >
+            <h4>©️shimony</h4></a>
         </main>
-
-    <script src="scripts.js"></script>
-        
-    
-
-
-</body>
+        <script src="scripts.js"></script>
+    </body>
 </html>

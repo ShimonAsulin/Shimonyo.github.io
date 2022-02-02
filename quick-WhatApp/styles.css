@@ -1,71 +1,129 @@
 * {
-    margin:0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    display: flex;
-    height: 100vh;
+a {
+    color: #000000;
+    text-decoration: none;
 }
 
 
-.container {
-    padding-top: 100px;
-    margin: auto;
+body {
+    margin: 0;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background-image: url("./img/background.jpg");
+}
+
+#header {
     text-align: center;
 }
 
-.fa-arrow-circle-left {
-   position: absolute;
-   top:0;
-   left:0;
-   margin: 20px;
-   font-size: 45px;
-   color: rgb(0, 0, 0);
-}
-
-.title {
-    margin-bottom: 15px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.subtitle {
-    padding-top: 15px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(99, 214, 115);
-}
-
-#userInput {
-    margin-top: 50px;
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border-radius: 7px;
-    border: 2px solid rgb(167, 166, 166);
-    color: #000000;
+    margin: 15px 5px;
+}
+
+img {
+    width: 60px;
+    display: block;
+    margin: 3em auto;
+}
+
+
+.myDropDown  {
+    padding: 10px;
+    border: 1px solid #209724;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#input {
+    width: 55%;
+    padding:10px;
+    box-sizing: border-box;
+    border: 1px solid #209724;
 
 }
 
-.submit {
-    padding: 17px;
-    border-radius: 7px;
-    color: #000000;
-    font-weight: bold;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin: 2px;
-    border-style: none;
-
-}
-
-.submit:hover {
-    background-color: rgb(99, 214, 115);
+#send {
+    padding: 8px;
+    width: 20%; 
+    background-color:#209724;
     color: #fff;
-    transition: .4s ease-in-out;
+    border: 3px solid #209724;
+    border-radius: 0 30px 30px 0;
+}
 
+#edit-name {
+    padding-bottom: 1.2em;;
+    font-size: 12px;
+    border:none;
+    background-color:none;
+    width:1px;
+    height: inherit;
+    cursor: pointer;
+}
+
+h4{
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    margin-top: 2em;
 }
 
 
-footer h2{
-    margin-top: 100px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+@media screen and (max-width: 440px){
+    .header-container {
+        padding: 10px;
+    }
+    
+    img {
+        width: 70px;
+        margin: 8.5em auto;
+    }
+    
+    .myDropDown  {
+        padding: 10px;
+        width:25%;
+    }
+    
+    
+    #input {
+        width: 40%;
+        padding:10px;
+    }
+    
+    #send {
+        padding: 8px;
+        background-color:#209724;
+        color: #fff;
+        border: 3px solid #209724;
+        border-radius: 0 30px 30px 0;
+    }
+    
+    #edit-name {
+        padding-bottom: 1.2em;;
+        font-size: 12px;
+        border:none;
+        background-color:none;
+        width:1px;
+        height: inherit;
+        cursor: pointer;
+    }
+    
+    h4{
+        font-family:'Courier New', Courier, monospace;
+        margin-bottom:1em;
+        position: absolute;
+        bottom: 0;
+        width: 96%;
+
+    }
 }

@@ -82,3 +82,59 @@ h2 {
     color: hsl(214, 27%, 18%);
     font-size: 30px;
   }
+
+
+  @media screen and (max-width: 500px){
+    
+    body {
+        display: flex;
+        height: 100px;
+        background-color: #1F2937;
+    }
+    
+    .container {
+        max-width: 600px;
+        margin: auto;
+        padding: 15px;
+    }
+    h2 {
+        font-size: 40px;
+        line-height: 42px;
+    }
+    
+    .subHeader {
+        padding:10px 0 0;
+        font-size: 18px;
+    }
+    
+    .Generate-btn {
+        margin:40px 0 30px;
+        font-size: 15px;
+    }
+    
+    .line {
+        margin:15px 0 30px;
+    }
+    
+    .passwords {
+        max-width: 400px;
+        column-gap: 16px;
+        /* overflow: hidden; */
+    }
+    .passwords input {
+        margin:10px;
+        padding: 8px;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+        background-color: #2F3E53;
+        color: #0e884b;
+        cursor: pointer;
+    }
+    
+    ::placeholder {
+        color: hsl(214, 27%, 18%);
+        font-size: 30px;
+      }
+    
+  }

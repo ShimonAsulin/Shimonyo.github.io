@@ -26,7 +26,8 @@ function copyToClipboard(event) {
           
           Toast.fire({
             icon: 'success',
-            title: 'password copied to clipboard',
+            width: "300px",
+            title: 'copied to clipboard',
           })
     }
 }

@@ -1,12 +1,5 @@
 
 
-// const btnGenerate = document.getElementById('btnGenerate');
-// let input1 = document.getElementById('input1')
-// let input2 = document.getElementById('input2')
-// let input3 = document.getElementById('input3')
-// let input4 = document.getElementById('input4')
-
-
 function copyToClipboard(event) {
     const input = event.target;
     if (!!input.value) {
@@ -52,14 +45,4 @@ textInputElements.forEach(input => input.addEventListener('click', (copyToClipbo
 btnGenerate.addEventListener('click', () => {
     textInputElements.forEach((input => generate(input)));
 })    
-
-
-
-
-
-
-
-
-
-
 

@@ -38,7 +38,7 @@ body {
     padding: 20px;
     height: 250px;
     background-color: aliceblue;
-    animation: opacity 3s;
+    animation: opacity 2s;
 }
 .popup-title {
     text-align: center;
@@ -84,6 +84,7 @@ body {
     background-color: white;
     box-shadow: -2px 6px 18px 3px rgba(0,0,0,0.75);
     padding: 50px;
+    animation: opacity 1s;
 }
 
 .score {

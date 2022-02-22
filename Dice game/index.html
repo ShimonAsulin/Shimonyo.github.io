@@ -1,19 +1,32 @@
 <html>
     <head>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="container">
+        <div id="popup" class="popup">
+            <h1 class="popup-title">Dice <span class="red-text">Game</span></h1>
+            <h2 class="popup-instructions">instructions:</h2>
+            <ul class="popup-list">
+                <li>the first player to score 20 points Win!🏆</li>
+                <li>To use the doubleOrNothin button press double click🖱️</li>
+                <li>two players get above 20 points? try again 😉</li> 
+            </ul>
+            <button id="popupBtn" class="popup-btn">Agree</button>
+        </div>
+        <div id="container" class="container">
             <h1 id="message">Player 1 Turn</h1>
             <div class="players">
                 <div id="player1">
-                    <h1>Score: 
+                    <h1 class="score">Score: 
                         <span id="player1Scoreboard">0</span>
                     </h1>
                     <div id="player1Dice" class="dice active">-</div>
                 </div>
                 <div id="player2">
-                    <h1>Score: 
+                    <h1 class="score">Score: 
                         <span id="player2Scoreboard">0</span>
                     </h1>
                     <div id="player2Dice" class="dice">-</div>
@@ -23,7 +36,7 @@
             <button id="rollBtn">Roll Dice 🎲</button>
             <button id="resetBtn">Reset Game 🔁</button>
             <!-- randomNumber or nothing button -->
-            <button id="DON">double or nothing👻</button>
+            <button id="DON"  title="Double click to active">double or nothing👻</button>
         </div>
         <script type="module" src="script.js"></script>
     </body>

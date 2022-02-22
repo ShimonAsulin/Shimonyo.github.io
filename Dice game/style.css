@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html, body { 
     --color-1: #a8e6cf;
     --color-2: #dcedc1; 
@@ -5,19 +10,74 @@ html, body {
     --color-4: #ffaaa5; 
     --color-5: #ff8b94;
     --color-6: #4051eb;
-    margin: 0;
-    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 body {
-    padding-top: 50px;
     background-image: linear-gradient(135deg, var(--color-1) , var(--color-2));
-    font-family: 'Roboto', sans-serif;
-    height: 100vh;
-    color: black;
+    font-family: "inter";
 }
 
+
+/* popUp */
+
+
+@keyframes opacity {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.red-text {
+    color: red;
+}
+.popup {
+    display: block;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    height: 250px;
+    background-color: aliceblue;
+    animation: opacity 2s;
+}
+.popup-title {
+    text-align: center;
+    font-weight: 600;
+}
+.popup-instructions {
+    margin: 20px 0px 20px 25px;
+    font-weight: 600;
+}
+
+.popup-list {
+    text-align: left;
+    list-style: square;
+    margin-left: 45px;
+    font-size: 17px;
+}
+.popup-list li {
+    margin-bottom: 3px;
+}
+
+.popup-list li::marker {
+    color: #84f0c8;
+}
+
+.popup-btn {
+    color: #000;
+    background-color: var(--color-2);
+    padding:15px;
+    margin:25px auto;
+    display: flex;
+}
+.popup-btn:hover {
+    background-color: #cbe99c;
+}
+
+/* main */
+
 .container {
+    display:none;
     width: 400px;
     text-align: center;
     margin: 0 auto;
@@ -26,6 +86,9 @@ body {
     padding: 50px;
 }
 
+.score {
+    margin: 20px 0;
+}
 .players {
     width: 100%;
     display: flex;
@@ -42,6 +105,7 @@ body {
     display: block;
     align-items: center;
     justify-content: center;
+
 }
 
 

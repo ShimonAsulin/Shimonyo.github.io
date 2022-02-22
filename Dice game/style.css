@@ -38,7 +38,7 @@ body {
     padding: 20px;
     height: 250px;
     background-color: aliceblue;
-    animation: opacity 2s;
+    animation: opacity 3s;
 }
 .popup-title {
     text-align: center;

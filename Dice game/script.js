@@ -40,14 +40,14 @@ function playerCondition() {
         player2Counter++
     }
     
-    if (player1Score >= 20 && player2Score >= 20) {
-        message.textContent = "You both got over 20 points, but a winner has only one! want to try again?🤼‍♂️"
+    if (player1Score >= 26 && player2Score >= 26) {
+        message.textContent = "You both got over 26 points, but a winner has only one! want to try again?🤼‍♂️"
         showResetButton()
     }
-        else if (player1Score >= 20 && player1Counter === player2Counter) {
+        else if (player1Score >= 26 && player1Counter === player2Counter) {
             message.textContent = "Player 1 Won 🥳"
             showResetButton()
-    }   else if (player2Score >= 20) {
+    }   else if (player2Score >= 26) {
             message.textContent = "Player 2 Won 🎉"
             showResetButton()
     }
@@ -114,14 +114,14 @@ function doubleOrNothing() {
         player2Counter++
     }
     
-    if (player1Score >= 20 && player2Score >= 20) {
-        message.textContent = "You both got over 20 points, but a winner has only one! want to try again?🤼‍♂️"
+    if (player1Score >= 26 && player2Score >= 26) {
+        message.textContent = "You both got over 26 points, but a winner has only one! want to try again?🤼‍♂️"
         showResetButton()
     }
-        else if (player1Score >= 20 && player1Counter === player2Counter) {
+        else if (player1Score >= 26 && player1Counter === player2Counter) {
             message.textContent = "Player 1 Won 🥳"
             showResetButton()
-    }   else if (player2Score >= 20) {
+    }   else if (player2Score >= 26) {
             message.textContent = "Player 2 Won 🎉"
             showResetButton()
     }
@@ -135,6 +135,7 @@ function doubleOrNothing() {
 })
 
 // double or nothing
+
 
 
 if (window.matchMedia("(max-width: 700px)").matches) {

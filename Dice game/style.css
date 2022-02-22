@@ -148,3 +148,68 @@ button:focus {
 .active {
     box-shadow: -2px 6px 18px 3px rgba(0,0,0,0.75);
 }
+
+
+@media screen and (max-width: 600px){
+
+    .popup {
+        max-width: 320px;
+        padding: 20px;
+        height: 350px;
+    }
+
+    .popup-instructions {
+        margin-left: 8px;
+    }
+    
+    .popup-list {
+        font-size: 15px;
+        margin-left: 10px;
+    }
+    .brakeline {
+        white-space: pre;
+    }
+    .popup-list li {
+        margin-bottom: 10px;
+    }
+    
+    .popup-list li::marker {
+        color: #75d6b2;
+    }
+    
+    .popup-btn {
+        background-color: #94e7c7ea;
+    }
+    
+    /* main */
+    
+       
+    .container {
+        width: 250px;
+        padding: 35px;
+    }
+    
+    .message {
+        font-size: 20px;
+    }
+
+    .score {
+        margin: 20px 0;
+        font-size: 22px;
+    }
+    
+    .dice {
+        width: 80px;
+        height: 80px;
+        font-size: 45px;    
+        display: flex;
+        align-items: center;
+    }
+       
+    
+    button {
+        padding: 12px 22px;
+        font-size: 17px;
+        margin: 40px auto 0px;
+    }
+}

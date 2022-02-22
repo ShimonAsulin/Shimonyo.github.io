@@ -135,7 +135,12 @@ function doubleOrNothing() {
 })
 
 // double or nothing
-doubleBtn.addEventListener("dblclick", doubleOrNothing)
+
+
+if (window.matchMedia("(max-width: 700px)").matches) {
+    doubleBtn.addEventListener("click", (doubleOrNothing));
+}else {
+  doubleBtn.addEventListener("dblclick", (doubleOrNothing)) }
 
  
 resetBtn.addEventListener("click", function(){

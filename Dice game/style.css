@@ -85,7 +85,10 @@ body {
     background-color: white;
     box-shadow: -2px 6px 18px 3px rgba(0,0,0,0.75);
     padding: 50px;
+<<<<<<< HEAD
     border-radius:10px;
+=======
+>>>>>>> 643757f24d89dcb18d61acc8d1eb888604bb56c5
     animation: opacity 1s;
 }
 

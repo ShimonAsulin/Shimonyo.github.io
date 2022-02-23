@@ -7,12 +7,12 @@
 /* font-family: 'Rubik', sans-serif;
 font-family: 'Varela Round', sans-serif; */
 
-body {
+html,body {
     background-image: url("background.png");
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center;
-
+    height: 100%;
 }
 
 .container-pc {
@@ -25,7 +25,7 @@ body {
     align-items: center;
     text-align: center;
     width:90vw;
-    height: 100vh;
+    height: 100%;
     margin: 0 auto;
 }
 

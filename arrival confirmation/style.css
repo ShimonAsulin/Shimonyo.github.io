@@ -103,7 +103,6 @@ label {
 
 
 /* small mobile devices*/
-
 @media screen and (max-height: 670px) {  
 
 
@@ -158,6 +157,25 @@ label {
     } 
 
 }
+@media screen and (max-height: 640px) {
+    .container-mobile input {
+        padding:5px;
+        border: solid 1px rgb(45, 148, 50);
+        border-radius: 10px;
+        width: 70%;
+        margin-bottom: 5px;
+    }
+
+    .submitBtn {
+        border: none;
+        background-color: green;
+        padding:10px;
+        border-radius: 10px;    
+        color: #fff;
+        font-family: 'Varela Round', sans-serif;
+    } 
+}
+
     
 
 

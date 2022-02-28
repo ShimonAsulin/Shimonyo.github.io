@@ -12,10 +12,28 @@ firebase.initializeApp(firebaseConfig);
 
 const popUp = document.getElementById('popup')
 const container = document.getElementById('container')
+const inputa = document.getElementById('name')
+const inputb = document.getElementById('count')
+const header = document.getElementById('header')
 let massagesRef = firebase.database().ref('count')
 
 const contactForm = document.getElementById('contactForm')
 contactForm.addEventListener('submit', submitForm)
+
+function focus() {
+    header.style.color="#ffffff00"
+    document.getElementById("contactForm").style.color="#000"
+}
+function blur() {
+    document.body.style.background = "";
+    header.style.color="#000"
+}
+
+inputa.addEventListener("focus", (focus));
+inputa.addEventListener("blur", (blur));
+
+inputb.addEventListener("focus", (focus));
+inputb.addEventListener("blur", (blur))
 
 //referens massges collaction
 

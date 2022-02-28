@@ -21,14 +21,23 @@ const contactForm = document.getElementById('contactForm')
 contactForm.addEventListener('submit', submitForm)
 
 function focus() {
-    header.style.color="#ffffff00"
     document.getElementById("contactForm").style.color="#000"
+}
+function walcome() {
+    header.textContent=`איזה כיף ${inputa.value} מחכים לך🎉`
+    header.style.color="#28d434"
+    header.style.fontSize="20px"
+    header.style.fontWeight="bold"
+    header.style.fontFamily="Rubik"
+    header.style.marginBottom="10px"
+
 }
 function blur() {
     document.body.style.background = "";
-    header.style.color="#000"
+    // header.style.color="#000"
 }
 
+inputa.addEventListener("keyup", (walcome));
 inputa.addEventListener("focus", (focus));
 inputa.addEventListener("blur", (blur));
 

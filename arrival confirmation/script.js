@@ -30,6 +30,7 @@ function walcome() {
     header.style.fontWeight="bold"
     header.style.fontFamily="Rubik"
     header.style.marginBottom="10px"
+    header.style.marginTop="35px"
 
 }
 function blur() {

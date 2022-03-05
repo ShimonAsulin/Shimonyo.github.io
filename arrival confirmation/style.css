@@ -22,7 +22,6 @@ html {
 .container {
     display: flex;
     text-align: center;
-    height: 100vh;
     align-items: center;
     justify-content: center;
     background-image: url("background.webp");
@@ -97,13 +96,19 @@ label {
     margin: auto;
 }
 
-
+@media (min-height: 730px) {
+    .container {
+    height: 100vh;
+    
+  
+    }
+}
 /* small mobile devices*/
- @media screen and (max-height: 750px) {  
+ /* @media screen and (max-height: 665px) {  
     .container {
         display: flex;
         text-align: center;
-        height: 100%;
+        
         align-items: center;
         justify-content: center;
     }
@@ -148,7 +153,7 @@ label {
         font-family: 'Varela Round', sans-serif;
     } 
 
-} 
+}  */
 /* @media screen and (max-height: 640px) {
     .container-mobile input {
         padding:5px;

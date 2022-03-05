@@ -14,13 +14,6 @@ html {
     height: 100%;
 }
 
-body {
-    background-image: url("background.webp");
-    background-repeat: repeat;
-    background-size: cover; 
-    background-position: center;
-    height: 100%;
-}
 
 .container-pc {
     display: none;
@@ -29,10 +22,13 @@ body {
 .container {
     display: flex;
     text-align: center;
-    height: 100%;
-    margin-right: 55px;
+    height: 100vh;
     align-items: center;
     justify-content: center;
+    background-image: url("background.webp");
+    background-size: cover; 
+    background-position: center;
+  
     
 }
 
@@ -103,15 +99,11 @@ label {
 
 
 /* small mobile devices*/
-@media screen and (max-height: 670px) {  
-
-
-    
+ @media screen and (max-height: 750px) {  
     .container {
         display: flex;
         text-align: center;
         height: 100%;
-        margin-right: 55px;
         align-items: center;
         justify-content: center;
     }
@@ -156,8 +148,8 @@ label {
         font-family: 'Varela Round', sans-serif;
     } 
 
-}
-@media screen and (max-height: 640px) {
+} 
+/* @media screen and (max-height: 640px) {
     .container-mobile input {
         padding:5px;
         border: solid 1px rgb(45, 148, 50);
@@ -174,7 +166,7 @@ label {
         color: #fff;
         font-family: 'Varela Round', sans-serif;
     } 
-}
+} */
 
     
 

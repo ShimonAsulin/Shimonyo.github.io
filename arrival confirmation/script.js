@@ -11,38 +11,17 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 const popUp = document.getElementById('popup')
+const popUp1 = document.getElementById('popup1')
 const container = document.getElementById('container')
 const inputa = document.getElementById('name')
 const inputb = document.getElementById('count')
 const header = document.getElementById('header')
+const backgroundWarp = document.getElementById('wrap-background')
+
 let massagesRef = firebase.database().ref('count')
 
 const contactForm = document.getElementById('contactForm')
 contactForm.addEventListener('submit', submitForm)
-
-function focus() {
-    document.getElementById("contactForm").style.color="#000"
-}
-function walcome() {
-    header.textContent=`איזה כיף ${inputa.value} מחכים לך🎉`
-    header.style.color="#28d434"
-    header.style.fontSize="20px"
-    header.style.fontWeight="bold"
-    header.style.fontFamily="Rubik"
-    header.style.marginBottom="10px"
-    header.style.marginTop="35px"
-
-}
-function blur() {
-    document.body.style.background = "";
-}
-
-inputa.addEventListener("keyup", (walcome));
-inputa.addEventListener("focus", (focus));
-inputa.addEventListener("blur", (blur));
-
-inputb.addEventListener("focus", (focus));
-inputb.addEventListener("blur", (blur))
 
 //referens massges collaction
 
@@ -56,8 +35,8 @@ function submitForm(e) {
     
     saveMassage(name, count)
     popUp.style.display = 'flex'
+    popUp.style.height = '100vh'
     container.style.display = 'none'
-    
 }
 
 // function to get get form value

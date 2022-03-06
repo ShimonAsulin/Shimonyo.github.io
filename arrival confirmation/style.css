@@ -7,7 +7,9 @@
 
 /* font-family: 'Rubik', sans-serif;
 font-family: 'Varela Round', sans-serif; */
-
+body { 
+   
+}
 
 /* mobile
  */
@@ -15,15 +17,13 @@ html {
     height: 100%;
 }
 
-
-.container-pc {
-    display: none;
-}
-
 .wrap-background {
     background-image: url("background.webp");
     background-size: cover; 
     background-position: center;
+}
+.container-pc {
+    display: none;
 }
 
 .container {
@@ -31,6 +31,7 @@ html {
     text-align: center;
     align-items: center;
     justify-content: center;
+    
 }
 
 
@@ -105,8 +106,8 @@ label {
     margin: auto;
 }
 
-@media (min-height: 730px) {
-    .container {
+@media (min-height: 750px) {
+    .wrap-background {
     height: 100vh;
     
     }

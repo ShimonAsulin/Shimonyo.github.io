@@ -11,12 +11,7 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 const popUp = document.getElementById('popup')
-const popUp1 = document.getElementById('popup1')
 const container = document.getElementById('container')
-const inputa = document.getElementById('name')
-const inputb = document.getElementById('count')
-const header = document.getElementById('header')
-const backgroundWarp = document.getElementById('wrap-background')
 
 let massagesRef = firebase.database().ref('count')
 

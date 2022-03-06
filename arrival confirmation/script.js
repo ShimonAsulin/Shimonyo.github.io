@@ -35,7 +35,6 @@ function walcome() {
 }
 function blur() {
     document.body.style.background = "";
-    // header.style.color="#000"
 }
 
 inputa.addEventListener("keyup", (walcome));

@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 /* font-family: 'Rubik', sans-serif;
 font-family: 'Varela Round', sans-serif; */
 
@@ -19,16 +20,24 @@ html {
     display: none;
 }
 
+.wrap-background {
+    background-image: url("background.webp");
+    background-size: cover; 
+    background-position: center;
+}
+
 .container {
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
-    background-image: url("background.webp");
-    background-size: cover; 
-    background-position: center;
-  
-    
+}
+
+
+span { 
+    display: inline;
+    background-color: rgba(255, 255, 255, 0.61);
+    border-radius: 5px;
 }
 
 h1 {
@@ -100,79 +109,8 @@ label {
     .container {
     height: 100vh;
     
-  
     }
 }
-/* small mobile devices*/
- /* @media screen and (max-height: 665px) {  
-    .container {
-        display: flex;
-        text-align: center;
-        
-        align-items: center;
-        justify-content: center;
-    }
-    
-    h1 {
-        font-family: 'Varela Round', sans-serif;
-        line-height: 1.1em;
-        text-align: center;
-        margin: 220px 0px 0px 0px;
-        font-size: 25px;
-    }
-    
-    .container-mobile h2, h3 {
-        text-align: center;
-        font-family: 'Rubik', sans-serif;
-        font-weight: normal;
-        margin-bottom: 3px;
-    }
-    
-    
-    .container-mobile input {
-        padding:10px;
-        border: solid 1px rgb(45, 148, 50);
-        border-radius: 10px;
-        width: 70%;
-        margin-bottom: 10px;
-    }
-       
-    
-    label {
-        font-family: 'Varela Round', sans-serif;
-        font-weight: bold;
-        font-size: 16px;
-    }    
-     
-    .submitBtn {
-        border: none;
-        background-color: green;
-        padding:15px;
-        border-radius: 10px;    
-        color: #fff;
-        font-family: 'Varela Round', sans-serif;
-    } 
-
-}  */
-/* @media screen and (max-height: 640px) {
-    .container-mobile input {
-        padding:5px;
-        border: solid 1px rgb(45, 148, 50);
-        border-radius: 10px;
-        width: 70%;
-        margin-bottom: 5px;
-    }
-
-    .submitBtn {
-        border: none;
-        background-color: green;
-        padding:10px;
-        border-radius: 10px;    
-        color: #fff;
-        font-family: 'Varela Round', sans-serif;
-    } 
-} */
-
     
 
 
@@ -201,7 +139,8 @@ label {
         display: block;
     }
 
-    body {
+    .container {
+    height: 100vh;
     background-image: none;
     background: rgb(145,255,247);
     background: linear-gradient(9deg, rgba(145,255,247,1) 0%, rgba(255,255,255,1) 100%);

@@ -63,13 +63,9 @@ a {
 
 
 /* main */
-.page-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-}
+
 .container {
+    margin-top: 1em;
     padding: .5em;
     max-width: 500px;
 }

@@ -12,9 +12,7 @@ firebase.initializeApp(firebaseConfig);
 
 const popUp = document.getElementById('popup')
 const container = document.getElementById('container')
-
 let massagesRef = firebase.database().ref('count')
-
 const contactForm = document.getElementById('contactForm')
 contactForm.addEventListener('submit', submitForm)
 

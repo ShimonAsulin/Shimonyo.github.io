@@ -2,8 +2,10 @@ html, body {
     margin: 0;
     padding: 0;
     background-image: url("img/table.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: "Exo 2", sans-serif;
-    height: 100vh;
+    height: 100%;
 }
 
 body {
@@ -20,26 +22,31 @@ button {
     border: none;
 }
 
+.header, .computer-score, .my-score, .remaining {
+    font-size: 2rem;
+}
+
 button#new-deck {
     align-self: flex-start;
-    padding: 5px;
+    padding: .4em;
+    font-size: 2rem;
 }
 
 button.draw {
-    font-size: 1.2em;
-    padding: 5px;
+    padding: .4em;
+    font-size: 2rem;
     align-self: stretch;
 }
 
 div.card-slot {
     border: 1px solid black;
     border-radius: 5px;
-    height: 120px;
-    width: calc(120px * 5 / 7);
+    height: 180px;
+    width: calc(180px * 5 / 7);
 }
 
 div.card-slot:nth-of-type(1) {
-    margin-bottom: 10px;
+    margin-bottom: 3em;
 }
 
 img.card {
@@ -64,75 +71,4 @@ button:disabled {
 
 h2 {
     margin: 10px;
-}
-@media only screen and (max-width: 625px){
-    
-    html, body {
-        margin: 0;
-        padding: 0;
-        background-image: url("img/table.png");
-        background-repeat: no-repeat;
-        font-family: "Exo 2", sans-serif;
-        height: 100vh;
-    }
-    
-    body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        color: white;
-    }
-    
-    button {
-        background-color: #5dc9a3;
-        cursor: pointer;
-        border: none;
-    }
-    
-    button#new-deck {
-        align-self: flex-start;
-        padding: 5px;
-    }
-    
-    button.draw {
-        font-size: 1.2em;
-        padding: 5px;
-        align-self: stretch;
-    }
-    
-    div.card-slot {
-        border: 1px solid black;
-        border-radius: 5px;
-        height: 120px;
-        width: calc(120px * 5 / 7);
-    }
-    
-    div.card-slot:nth-of-type(1) {
-        margin-bottom: 10px;
-    }
-    
-    img.card {
-        width: 100%;
-        height: 100%;
-    }
-    
-    div.top {
-        display: flex;
-        align-items: flex-start;
-        align-self: flex-start;
-    }
-    
-    div.top > p {
-        margin: 0;
-        margin-left: 10px;
-    }
-    
-    button:disabled {
-        cursor: not-allowed;
-    }
-    
-    h2 {
-        margin: 10px;
-    }
 }

@@ -59,9 +59,12 @@ drawCardBtn.addEventListener("click", async () => {
                 if (computerScore > myScore) {
                     // display "The computer won the game!"
                     header.textContent = "The computer won the game!"
+                    header.style.color="#d74848"
                 } else if (myScore > computerScore) {
                     // display "You won the game!"
                     header.textContent = "You won the game!"
+                    header.style.color="#6cfaff"
+
                 } else {
                     // display "It's a tie game!"
                     header.textContent = "It's a tie game!"

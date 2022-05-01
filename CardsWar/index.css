@@ -5,7 +5,7 @@ html, body {
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "Exo 2", sans-serif;
-    height: 100%;
+    min-height: 100%;
 }
 
 body {
@@ -16,33 +16,29 @@ body {
     color: white;
 }
 
-button {
-    background-color: #FFF100;
-    cursor: pointer;
-    border: none;
-}
 
-.header, .computer-score, .my-score, .remaining {
-    font-size: 2rem;
+.header, .computer-score, .my-score,  button#new-deck, button.draw {
+    font-size: 1.3rem;
+}
+.remaining {
+    font-size: 1.1rem
 }
 
 button#new-deck {
     align-self: flex-start;
-    padding: .4em;
-    font-size: 2rem;
+    padding: .2em;
 }
 
 button.draw {
     padding: .4em;
-    font-size: 2rem;
     align-self: stretch;
 }
 
 div.card-slot {
     border: 1px solid black;
     border-radius: 5px;
-    height: 180px;
-    width: calc(180px * 5 / 7);
+    height: 150px;
+    width: calc(150px * 5 / 7);
 }
 
 div.card-slot:nth-of-type(1) {
@@ -56,7 +52,7 @@ img.card {
 
 div.top {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     align-self: flex-start;
 }
 
@@ -72,3 +68,12 @@ button:disabled {
 h2 {
     margin: 10px;
 }
+
+button {
+    background-color: #FFF100;
+    cursor: pointer;
+    border: none;
+}
+
+
+

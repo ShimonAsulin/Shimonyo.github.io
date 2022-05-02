@@ -16,12 +16,12 @@ async function callApi() {
         let search = inputEl.value
         console.log("🚀 ~ file: script.js ~ line 6 ~ callApi ~ input", search)
 
-    fetch(`http://www.omdbapi.com/?s=${search}&apikey=fcb380f9`)
+    fetch(`https://www.omdbapi.com/?s=${search}&apikey=fcb380f9`)
         .then (res => res.json())
         .then (data =>  {
             console.log(data);
             data.Search.map(movie => {
-                fetch(`http://www.omdbapi.com/?t=${movie.Title}&apikey=fcb380f9`)
+                fetch(`https://www.omdbapi.com/?t=${movie.Title}&apikey=fcb380f9`)
                 .then(res=>res.json())
                 .then(data => { 
                     console.log(data);

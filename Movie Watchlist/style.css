@@ -105,3 +105,67 @@ main {
     color: rgb(225, 181, 23);
     font-size: 1.7rem;
 }
+
+/* movie list */
+.movie-container {
+    display: flex;
+    width: 90%;
+    margin: 1em;
+}
+
+
+
+
+.details-1{
+    
+}
+
+
+.details-1 img{
+    height: 130px;
+    width: 130px;
+}
+
+.details-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    font-size:1rem;
+    margin: 0 .5em;
+    padding: 0;
+
+}
+
+.details-2 p {
+    font-size:.8rem;
+}
+
+.title-rating {
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    margin-top: .3em;
+}
+
+.movie-img {
+    width: 30%;
+    height: 80%;
+}
+
+.movie-runtime {
+   font-size: .7rem;
+}
+.movie-genre {
+    font-size: .6rem;
+    font-weight: bold;
+    margin: .7em 0;
+}
+.movie-title {
+ font-size: .8rem;
+}
+.movie-rating {
+
+}
+.movie-plot {
+
+}

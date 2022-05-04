@@ -41,9 +41,11 @@ function render(movie) {
             <div class="movie-container">
                 <div class="details-1">
                     <img class="movie-img" src="${movie.Poster}">
-                    <p class="movie-runtime">${movie.Runtime}</p>
-                    <p class="movie-genre">${movie.Genre}</p>
-                    <button id="btn" onclick={addMovie()}>add</button>
+                    <div class="space-between">
+                        <p class="movie-runtime">${movie.Runtime}</p>
+                        <p class="movie-genre">${movie.Genre}</p>
+                        <button id="btn" class="addToBtn" onclick={addMovie()}>add</button>
+                    </div>
                 </div>
                 
                 <div class="details-2">

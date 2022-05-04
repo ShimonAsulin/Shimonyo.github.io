@@ -1,3 +1,6 @@
+/* global */
+
+
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +15,14 @@ body, html {
 
 .gold {
     color: rgb(225, 181, 23);
+}
+
+
+.space-between {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -111,28 +122,29 @@ main {
     display: flex;
     width: 90%;
     margin: 1em;
+    padding-bottom: 2em;
 }
 
 
 
 
 .details-1{
+    width: 60%;
     
 }
 
 
 .details-1 img{
-    height: 130px;
-    width: 130px;
+    height: 145px;
+    width: 135px;
 }
 
 .details-2 {
+    width: 40%;
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
     font-size:1rem;
     margin: 0 .5em;
-    padding: 0;
 
 }
 
@@ -167,5 +179,10 @@ main {
 
 }
 .movie-plot {
+    margin-top: 2em;
+    text-align: left;
+}
 
+.addToBtn {
+    width: 40%;
 }

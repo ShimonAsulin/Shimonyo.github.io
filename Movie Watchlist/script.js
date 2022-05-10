@@ -3,7 +3,7 @@ const inputEl = document.getElementById("input-search")
 const movieListEl = document.getElementById('movie-list')
 
 let watchlist = localStorage.id? JSON.parse(localStorage.id): []
-console.log("🚀 ~ file: script.js ~ line 6 ~ watchlist", watchlist)
+
 
 
 
@@ -28,7 +28,6 @@ console.log("🚀 ~ file: script.js ~ line 6 ~ watchlist", watchlist)
                 .then(data => { 
                     render(data)
                 })
-           
         })
     })}
 
@@ -63,16 +62,26 @@ function render(movie) {
            `
     }
     
-    function addMovie(id) {      
-        watchlist.push(id) 
+    function addMovie(id) {  
+        
+        const movies = watchlist.find(movie => movie === id)
+        if (movies === id) {
+            alert("movie already exists")
+        } else {
+            watchlist.push(id)
+            fetch(`https://www.omdbapi.com/?i=${id}&apikey=fcb380f9`)
+            .then (res => res.json())
+            .then (data =>  {
+            alert(`${data.Title} Added to Watchlist`)
+        })
+        }
+
+        console.log(id)
+        console.log(watchlist)
         
         localStorage.setItem('id', JSON.stringify(watchlist))
         
-        fetch(`https://www.omdbapi.com/?i=${id}&apikey=fcb380f9`)
-        .then (res => res.json())
-        .then (data =>  {
-            alert(`${data.Title} Added to Watchlist`)
-        })
+        
 }
     
 

@@ -65,9 +65,14 @@ function render(movie) {
     
     function addMovie(id) {      
         watchlist.push(id) 
-        console.log("🚀 ~ file: script.js ~ line 68 ~ addMovie ~ watchlist", watchlist)
+        
         localStorage.setItem('id', JSON.stringify(watchlist))
-
+        
+        fetch(`https://www.omdbapi.com/?i=${id}&apikey=fcb380f9`)
+        .then (res => res.json())
+        .then (data =>  {
+            alert(`${data.Title} Added to Watchlist`)
+        })
 }
     
 

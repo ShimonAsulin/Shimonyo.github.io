@@ -128,7 +128,14 @@ main {
     padding-bottom: 2em;
 }
 .watchlist-exploring {
-    margin: 1em 0
+    margin: 2em 0
+}
+.watchlist-exploring img {
+    width: 50px;
+    width: 50px;
+}
+.watchlist-exploring h2{
+    font-size: 1.2rem;
 }
 
 
@@ -194,5 +201,5 @@ main {
 }
 
 .removeBtn {
-    
+
 }

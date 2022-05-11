@@ -1,7 +1,7 @@
 const formEl = document.getElementById("form")
 const inputEl = document.getElementById("input-search")
-const movieListEl = document.getElementById('movie-list')
-
+const movieListEl = document.getElementById('movie-exploring')
+const movieList = document.getElementById('movie-list')
 let watchlist = localStorage.id? JSON.parse(localStorage.id): []
 
 
@@ -21,15 +21,18 @@ let watchlist = localStorage.id? JSON.parse(localStorage.id): []
     fetch(`https://www.omdbapi.com/?s=${search}&apikey=fcb380f9`)
         .then (res => res.json())
         .then (data =>  {
-            // console.log(data);
+            movieList.innerHTML = ""
             data.Search.map(movie => {
                 fetch(`https://www.omdbapi.com/?t=${movie.Title}&apikey=fcb380f9`)
                 .then(res=>res.json())
                 .then(data => { 
+
                     render(data)
                 })
         })
-    })}
+    })
+    .catch(arr => alert("movie not found"))
+}                     
 
 
 
@@ -37,10 +40,9 @@ let watchlist = localStorage.id? JSON.parse(localStorage.id): []
 
 
 function render(movie) {
-        document.getElementById("movie-exploring").style.display = "none"
+        // document.getElementById("movie-exploring").style.display = "none"
         const {Poster, Runtime, Genre, Title, imdbRating, Plot, imdbID} = movie
-        
-        movieListEl.innerHTML +=  `
+        movieList.innerHTML +=  `
             <div class="movie-container">
                 <div class="details-1">
                     <img class="movie-img" src="${Poster}">

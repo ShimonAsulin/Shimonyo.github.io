@@ -40,7 +40,6 @@ let watchlist = localStorage.id? JSON.parse(localStorage.id): []
 
 
 function render(movie) {
-        // document.getElementById("movie-exploring").style.display = "none"
         const {Poster, Runtime, Genre, Title, imdbRating, Plot, imdbID} = movie
         movieList.innerHTML +=  `
             <div class="movie-container">

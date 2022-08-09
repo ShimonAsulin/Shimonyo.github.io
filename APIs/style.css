@@ -17,7 +17,6 @@ html, body {
     margin: 2rem auto;
     border-radius: 1rem;
     align-items: center;
-    
     border: 1px solid rgb(0, 0, 0);
 }
 .header {    
@@ -31,19 +30,20 @@ html, body {
     padding: 1em;
     margin: 1em;
     border: 1px solid;
-    border-radius: 3px;
+    border-radius: 5px;
     text-align: center;
 }
 
 .page-header {
-
+    font-size: 2rem;
+    text-align: center;
 }
 
 .my-api-name {
     grid-column: 1 / 4;
     text-align: center;
     padding: 0.3rem;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 .my-api-description {
     grid-column:  2;
@@ -57,11 +57,32 @@ html, body {
     grid-column:  1;
     grid-row: 4;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 .my-api-https {
     grid-row: 4;
     grid-column:  3;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width: 450px){
+    html {
+        font-size: .8rem;
+    }
+
+    .my-api {
+        margin: 1em;
+    }
+
+    .my-api-description {
+        grid-column:  2;
+        text-align: center;
+        padding: 0rem;
+        font-size: 1.1rem;
+        grid-row-start: 3;
+        height:70px;
+        overflow-y: auto;
+    }
+   
 }

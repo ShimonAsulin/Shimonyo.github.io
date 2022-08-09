@@ -1,11 +1,15 @@
 const container = document.getElementById("container")
-
+const header = document.getElementById("header")
 async function getAPIs() {
     let res = await fetch('https://api.publicapis.org/entries')
     let API = await res.json()
     return API
 }
-
+function headerCount(data) {
+    header.innerHTML = `
+    we have ${data.count} API's for you, just Search!
+    `
+}
 function getAPIhtml(myAPIs) {
     return ` <div class="my-api">
         <div class="my-api-name">Name & Category: <a href=${myAPIs.Link}>${myAPIs.API}(${myAPIs.Category})</a></div>
@@ -21,6 +25,7 @@ function displayAPIs(myAPIs) {
 
 getAPIs().then(APIs => {
     console.log(APIs)
+    headerCount(APIs)
     filterAPIs(APIs)
    }
     )  
@@ -37,5 +42,4 @@ function filterAPIs(APIs) {
 }
 
 
-// let filtered = APIs.entries.filter(api => api.API.toUpperCase().includes(inputValue))
 

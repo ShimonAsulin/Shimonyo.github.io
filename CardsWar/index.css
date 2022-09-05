@@ -30,7 +30,10 @@ button#new-deck {
 }
 
 button.draw {
-    padding: .4em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: .5em;
     align-self: stretch;
 }
 
